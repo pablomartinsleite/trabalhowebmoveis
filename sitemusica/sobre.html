@@ -3,56 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorem Ipsum - Sobre</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <title>Sobre - Pablo Martins Leite</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <header>
-        <h1>Lorem Ipsum Dolor</h1>
-        <nav>
-            <ul>
-                <li><a href="#hero">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#repertoire">Repertório</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Pablo Martins Leite</h1>
+            <p class="subtitle">Violinista Clássico</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Principal</a></li>
+                    <li><a href="repertorio.html">Repertório</a></li>
+                    <li><a href="sobre.html" class="active">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main class="page-content">
-        <section id="about">
-            <h2>Sobre Lorem Ipsum</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                </div>
-                <div class="about-image">
-                     <img src="images/foto_musico.jpg" alt="Foto do músico">
-                </div>
+    <main>
+        <section id="biografia" class="container">
+            <h2>Sobre Pablo Martins Leite</h2>
+            <div class="image-placeholder-large">
+                <p>[Espaço para Foto de Pablo Martins Leite]</p>
             </div>
-        </section>
+            <p>Pablo Martins Leite nasceu em Florianópolis, Santa Catarina, em uma família de músicos amadores. Desde cedo, demonstrou um talento excepcional para a música, iniciando seus estudos de violino aos seis anos de idade. Sua paixão e dedicação o levaram a aprofundar-se no instrumento, buscando sempre a perfeição técnica e a expressividade musical.</p>
+            <p>Formou-se com honras no Conservatório Nacional de Música de São Paulo e, posteriormente, aperfeiçoou sua arte com renomados mestres na Europa, incluindo passagens pela Academia de Música de Viena e pelo Royal College of Music em Londres. Durante seus estudos, Pablo foi laureado em diversos concursos nacionais e internacionais, destacando-se por sua interpretação visceral e sonoridade cativante.</p>
+            <p>Como solista, Pablo Martins Leite já se apresentou com importantes orquestras sinfônicas do Brasil e do exterior, cativando plateias com seu virtuosismo e profunda musicalidade. Seu repertório abrange desde os grandes mestres do Barroco até compositores contemporâneos, sempre buscando novas formas de conectar o público à beleza atemporal da música clássica.</p>
 
-         <section id="education">
-            <h2>Estudos e Formação</h2>
-            <h3>Formação Educacional</h3>
-            <ul>
-                <li>Lorem ipsum dolor sit amet - Consectetur Adipiscing, 2010</li>
-                <li>Sed do eiusmod tempor - Incididunt ut Labore, 2014</li>
-            </ul>
-
-            <h3>Professores e Mentores</h3>
-            <ul>
-                <li>Ut enim ad minim veniam - Quis Nostrud</li>
-                <li>Exercitation ullamco - Laboris nisi ut</li>
-            </ul>
+            <h3 id="masterclass">Filosofia Musical e Ensino</h3>
+            <p>Além de sua carreira como concertista, Pablo é um dedicado pedagogo. Acredita que a música tem o poder de transformar vidas e se empenha em compartilhar seu conhecimento e paixão com as novas gerações de músicos. Suas masterclasses são procuradas por estudantes de todo o país, que admiram sua abordagem inspiradora e seu compromisso com a excelência artística.</p>
+            <p>"Para mim, cada nota é uma história, cada frase musical uma emoção a ser compartilhada. O violino é a extensão da minha voz, o veículo através do qual busco tocar a alma das pessoas", afirma Pablo.</p>
+            <div class="image-placeholder">
+                 <p>[Espaço para Imagem de Pablo em uma Masterclass ou com alunos]</p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2023 Lorem Ipsum Dolor. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Pablo Martins Leite - Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>

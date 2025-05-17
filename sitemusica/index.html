@@ -3,82 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nome do Músico/Banda</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Pablo Martins Leite - Violinista Clássico</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <header>
         <div class="container">
-            <h1>Nome do Músico/Banda</h1>
+            <h1>Pablo Martins Leite</h1>
+            <p class="subtitle">Violinista Clássico</p>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#music">Música</a></li>
-                    <li><a href="#videos">Vídeos</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="index.html" class="active">Principal</a></li>
+                    <li><a href="repertorio.html">Repertório</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <h2>Bem-vindo!</h2>
-            <p>Explore minha música, vídeos e fique por dentro das novidades.</p>
-            <img src="placeholder-home.jpg" alt="Imagem de Destaque" style="max-width: 100%; height: auto;">
-        </div>
-    </section>
+    <main>
+        <section id="hero" class="container">
+            <h2>Bem-vindo ao Mundo da Música Clássica</h2>
+            <p>Descubra a paixão e a arte do violino através das performances de Pablo Martins Leite.</p>
+            <div class="image-placeholder">
+    <img src="images/10.png">
+</div>
+            <button class="cta-button" onclick="showWelcomeMessage()">Saiba Mais</button>
+        </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>Sobre</h2>
-            <p>Conte um pouco sobre você, sua história na música, influências, etc.</p>
-            <p>Este é o lugar para a sua biografia.</p>
-        </div>
-    </section>
-
-    <section id="music">
-        <div class="container">
-            <h2>Música</h2>
-            <p>Liste seus álbuns, EPs, singles ou adicione links para plataformas de streaming como Spotify, YouTube Music, Deezer, etc.</p>
-            <ul>
-                <li>Álbum 1 (Link para streaming/player embarcado)</li>
-                <li>Single Recente (Link para streaming/player embarcado)</li>
-                </ul>
-        </div>
-    </section>
-
-    <section id="videos">
-        <div class="container">
-            <h2>Vídeos</h2>
-            <p>Compartilhe seus videoclipes, performances ao vivo ou outros vídeos relevantes.</p>
-            <div class="video-gallery">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <section id="destaques" class="container">
+            <h3>Destaques</h3>
+            <div class="destaque-item">
+                <div class="image-placeholder-small">
+                    <p>[Imagem Concerto Recente]</p>
                 </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contato</h2>
-            <p>Como as pessoas podem entrar em contato ou te seguir nas redes sociais?</p>
-            <p>Email: seuemail@exemplo.com</p>
-            <div class="social-links">
-                <a href="LINK_INSTAGRAM" target="_blank">Instagram</a> |
-                <a href="LINK_FACEBOOK" target="_blank">Facebook</a> |
-                <a href="LINK_TWITTER" target="_blank">Twitter (ou outra rede)</a>
+                <h4>Concerto de Primavera</h4>
+                <p>Uma noite memorável com obras de Vivaldi e Mozart. <a href="repertorio.html#vivaldi">Ver detalhes</a></p>
             </div>
-        </div>
-    </section>
+            <div class="destaque-item">
+                <div class="image-placeholder-small">
+                    <p>[Imagem Masterclass]</p>
+                </div>
+                <h4>Masterclass Internacional</h4>
+                <p>Pablo compartilhou sua técnica e paixão com jovens talentos. <a href="sobre.html#masterclass">Leia mais</a></p>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Nome do Músico/Banda. Todos os direitos reservados.</p>
+            <p>&copy; <span id="currentYear"></span> Pablo Martins Leite - Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

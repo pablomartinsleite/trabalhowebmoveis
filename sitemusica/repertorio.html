@@ -3,53 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorem Ipsum - Repertório</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <title>Repertório - Pablo Martins Leite</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <header>
-        <h1>Lorem Ipsum Dolor</h1>
-        <nav>
-            <ul>
-                <li><a href="#hero">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#repertoire">Repertório</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Pablo Martins Leite</h1>
+            <p class="subtitle">Violinista Clássico</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Principal</a></li>
+                    <li><a href="repertorio.html" class="active">Repertório</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main class="page-content">
-        <section id="repertoire">
+    <main>
+        <section id="repertorio-lista" class="container">
             <h2>Repertório Selecionado</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div class="portfolio-items">
-                <div class="portfolio-item">
-                    <h3>Lorem Ipsum - Dolor Sit Amet</h3>
-                    <p>Consectetur adipiscing elit.</p>
-                    <a href="#" target="_blank">Ouvir/Ver</a>
-                </div>
-                <div class="portfolio-item">
-                    <h3>Sed do Eiusmod - Tempor Incididunt</h3>
-                    <p>Ut labore et dolore.</p>
-                    <a href="#" target="_blank">Ouvir/Ver</a>
+            <p>Uma amostra das obras que Pablo Martins Leite interpreta com maestria.</p>
+
+            <div class="repertorio-item">
+                <h3 id="bach">Johann Sebastian Bach</h3>
+                <ul>
+                    <li>Sonatas e Partitas para violino solo (BWV 1001-1006)</li>
+                    <li>Concertos para Violino em Lá menor (BWV 1041) e Mi maior (BWV 1042)</li>
+                    <li>Concerto para Dois Violinos em Ré menor (BWV 1043)</li>
+                </ul>
+                <button class="toggle-details-btn" data-target="bach-details">Ver Detalhes</button>
+                <div id="bach-details" class="repertorio-details">
+                    <p>Bach representa o ápice da música barroca, e suas obras para violino são um pilar fundamental no repertório de qualquer violinista. A profundidade emocional e a complexidade técnica são desafios que Pablo abraça com devoção.</p>
+                    <div class="image-placeholder-small">
+                        <p>[Imagem relacionada a Bach ou partitura]</p>
+                    </div>
                 </div>
             </div>
-        </section>
 
-         <section id="recordings">
-            <h2>Gravações</h2>
-            <p>Duis aute irure dolor in reprehenderit.</p>
-            <ul>
-                <li>Voluptate velit esse cillum (2020) - Lorem Ipsum</li>
-                <li>Eu fugiat nulla pariatur (2022) - Dolor Sit Amet</li>
-            </ul>
-         </section>
+            <div class="repertorio-item">
+                <h3 id="mozart">Wolfgang Amadeus Mozart</h3>
+                <ul>
+                    <li>Concertos para Violino (No. 3 em Sol Maior, K. 216; No. 4 em Ré Maior, K. 218; No. 5 em Lá Maior, K. 219 "Turco")</li>
+                    <li>Sinfonia Concertante para Violino, Viola e Orquestra em Mi bemol Maior (K. 364)</li>
+                    <li>Sonatas para Violino e Piano</li>
+                </ul>
+                <button class="toggle-details-btn" data-target="mozart-details">Ver Detalhes</button>
+                <div id="mozart-details" class="repertorio-details">
+                    <p>A elegância e o brilhantismo de Mozart são inconfundíveis. Seus concertos para violino são conhecidos por suas melodias cativantes e exigências virtuosísticas, que Pablo interpreta com clareza e expressividade.</p>
+                     <div class="image-placeholder-small">
+                        <p>[Imagem relacionada a Mozart ou partitura]</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="repertorio-item">
+                <h3 id="beethoven">Ludwig van Beethoven</h3>
+                <ul>
+                    <li>Concerto para Violino em Ré Maior, Op. 61</li>
+                    <li>Sonatas para Violino e Piano (ex: No. 5 em Fá Maior "Primavera", Op. 24; No. 9 em Lá Maior "Kreutzer", Op. 47)</li>
+                    <li>Romanzas para Violino e Orquestra (No. 1 em Sol Maior, Op. 40; No. 2 em Fá Maior, Op. 50)</li>
+                </ul>
+                <button class="toggle-details-btn" data-target="beethoven-details">Ver Detalhes</button>
+                <div id="beethoven-details" class="repertorio-details">
+                    <p>As obras de Beethoven marcam a transição do Classicismo para o Romantismo. Seu concerto para violino é uma das peças mais reverenciadas do repertório, e Pablo o executa com a intensidade e a nobreza que a obra exige.</p>
+                     <div class="image-placeholder-small">
+                        <p>[Imagem relacionada a Beethoven ou partitura]</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="repertorio-item">
+                <h3 id="vivaldi">Antonio Vivaldi</h3>
+                <ul>
+                    <li>As Quatro Estações (Le quattro stagioni), Op. 8, Nos. 1-4</li>
+                    <li>L'estro armonico, Op. 3</li>
+                    <li>Diversos concertos para violino solo</li>
+                </ul>
+                <button class="toggle-details-btn" data-target="vivaldi-details">Ver Detalhes</button>
+                <div id="vivaldi-details" class="repertorio-details">
+                    <p>Vivaldi, o "Padre Ruivo", é sinônimo de virtuosismo barroco. "As Quatro Estações" são universalmente amadas, e Pablo as interpreta com a vivacidade e o colorido que caracterizam a música do compositor veneziano.</p>
+                     <div class="image-placeholder-small">
+                        <p>[Imagem relacionada a Vivaldi ou partitura]</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
 
     <footer>
-        <p>© 2023 Lorem Ipsum Dolor. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Pablo Martins Leite - Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>
