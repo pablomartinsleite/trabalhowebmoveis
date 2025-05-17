@@ -1,0 +1,136 @@
+/* Estilos Gerais */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Cor de fundo clara */
+    color: #333; /* Cor do texto principal */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: #333; /* Cor de fundo escura para o header */
+    color: #fff; /* Cor do texto clara para o header */
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid; /* Borda inferior de destaque */
+    position: sticky; /* Fixa o header no topo */
+    top: 0;
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+header ul li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header nav {
+    float: none; /* Remove o float para centralizar no mobile/layout simples */
+}
+
+/* Seções */
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#home.hero {
+    background: url('background-home.jpg') no-repeat center center/cover; /* Imagem de fundo para a seção home */
+    color: #fff; /* Cor do texto clara sobre a imagem */
+    min-height: 500px; /* Altura mínima da seção home */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra no texto para melhor leitura */
+}
+
+#home.hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#home.hero p {
+    font-size: 1.2em;
+}
+
+
+#about {
+    background: #fff; /* Fundo branco para contraste */
+}
+
+#music {
+     background: #e2e2e2; /* Fundo cinza claro para contraste */
+}
+
+#videos .video-gallery iframe {
+    margin: 10px;
+    max-width: 100%; /* Torna o vídeo responsivo */
+    height: auto; /* Mantém a proporção */
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+/* Responsividade Básica */
+@media(max-width: 768px){
+    header .container,
+    section .container,
+    footer .container {
+        width: 95%;
+    }
+
+    header ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+
+    #home.hero h2 {
+        font-size: 2em;
+    }
+}
